@@ -24,7 +24,7 @@ function Course({ menu, page, products }: CourseProps): JSX.Element {
 
 export default withLayout(Course);
 
-export const getStaticPaths: any = async (): any => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const { data: menu } = await axios.post<MenuItem[]>(process.env.NEXT_PUBLICK_DOMAIN + '/api/top-page/find', {
     firstCategory
   });
