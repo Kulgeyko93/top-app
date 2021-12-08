@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import axios from 'axios';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
-import { useState } from 'react';
 import {withLayout} from './../../layout/Layout';
 // import {Button, Htag, Tag, P, Rating} from '../../components';
 import { MenuItem } from '../../intarfaces/menu.interface';
