@@ -1,28 +1,64 @@
-.footer {
+/* stylelint-disable selector-class-pattern */
+.firstLevel {
   display: grid;
+  align-items: center;
+  grid-template-columns: 24px 1fr;
+  gap: 20px;
 
-  padding: 25px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
 
-  color: var(--white);
+.firstLevelActive,
+.firstLevel:hover {
+  color: var(--primary);
+}
 
-  background: var(--primary);
+.firstLevelActive svg,
+.firstLevel:hover svg {
+  fill: var(--primary);
+}
 
-  font-size: 16px;
+.secondLevel {
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  text-transform: uppercase;
+
+  color: var(--grey-dark);
+
+  font-size: 12px;
+  font-weight: 300;
   line-height: 16px;
-  grid-template-columns: 1fr auto auto;
-  gap: 10px 40px;
 }
 
-.footer a:hover {
-  color: var(--gray-light);
+.secondBlock {
+  margin: 15px 0 0 12px;
+  padding-left: 32px;
+
+  border-left: 1px solid #DFDFDF;
 }
 
-@media (max-width: 765px) {
-  .footer {
-    grid-template-columns: 1fr;
-  }
+.secondLEvelBlockOpened {
+  margin-bottom: 20px;
+}
 
-  .footer:nth-child(n) {
-    text-align: center;
-  }
+.thirdLevel {
+  display: block;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  color: var(--grey-dark);
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.thirdLevelActive,
+.thirdLevel:hover {
+  color: var(--primary);
 }
