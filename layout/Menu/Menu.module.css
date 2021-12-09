@@ -40,7 +40,15 @@
   border-left: 1px solid #DFDFDF;
 }
 
-.secondLEvelBlockOpened {
+.secondLevelBlock {
+  display: none;
+}
+
+.secondLevelBlockOpened {
+  display: block;
+}
+
+.secondLevelBlockOpened:last-child {
   margin-bottom: 20px;
 }
 
