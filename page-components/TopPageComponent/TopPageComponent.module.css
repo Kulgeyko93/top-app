@@ -8,10 +8,6 @@
   gap: 20px;
 }
 
-.wrapper {
-  margin-top: 40px;
-}
-
 .hhTitle {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -19,4 +15,22 @@
   align-items: baseline;
   justify-items: left;
   gap: 20px;
+}
+
+.seo h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.seo h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.seo h3 {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 27px;
 }

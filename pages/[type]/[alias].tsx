@@ -47,7 +47,6 @@ export const getStaticProps: GetStaticProps<TopPageProps> = async ({ params }: G
   }
 
   const firstCategoryItem = firstCategoryMenu.find(m => m.route === params.type);
-  console.log(firstCategoryItem);
   if (!firstCategoryItem) {
     return {
       notFound: true,
@@ -68,7 +67,6 @@ export const getStaticProps: GetStaticProps<TopPageProps> = async ({ params }: G
       category: page.category,
       limit: 10
     });
-  console.log(firstCategoryItem);
     return {
       props: {
         menu,
