@@ -2,7 +2,7 @@ import Image from 'next/image';
 import axios from 'axios';
 import { useState } from 'react';
 import {withLayout} from './../layout/Layout';
-import {Button, Htag, Tag, P, Rating} from '../components';
+import {Button, Htag, Tag, P, Rating, Input, Textarea} from '../components';
 import styles from '../styles/Home.module.css';
 import { GetStaticProps } from 'next';
 import { MenuItem } from '../intarfaces/menu.interface';
@@ -17,10 +17,11 @@ function Home({ menu, firstCategory }: HomeProps): JSX.Element {
       <P>asdasdasdsadassdsdaasd</P>
       <Tag size='s' color='green'>asda</Tag>
       <Rating rating={rating} setRating={setRating} isEditeble={true}/>
-
       <ul>
         {menu.map(m => (<li key={m._id.secondCategory}>{m._id.secondCategory}</li>))}
       </ul>
+      <Input />
+      <Textarea />
     </>
   );
 }
