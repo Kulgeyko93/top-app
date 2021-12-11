@@ -1,3 +1,42 @@
-.p {
-  margin: 0;
+/* stylelint-disable block-closing-brace-empty-line-before */
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable unit-no-unknown */
+/* stylelint-disable max-line-length */
+.product {
+  display: grid;
+  grid-template-columns: [start] 70px [logoend] 30px [titlestart] calc(50% - 100px) [middle] auto [pricestart] auto [priceend] 40px [creditstart] auto [creditend] 40px [ratingstart] auto [end];
+
+  justify-content: space-around;
+
+  margin-bottom: 20px;
+
+}
+
+.logo {
+  grid-column: start / logoend;
+  grid-row: 1/ span 2;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.title,
+.tags {
+  grid-column: titlestart / middle;
+}
+
+.price,
+.priceTitle {
+  grid-column: pricestart / priceend;
+}
+
+.credit,
+.creditTitle {
+  grid-column: creditstart / creditend;
+}
+
+.rating,
+.rateTitle {
+  grid-column: ratingstart / end;
 }
